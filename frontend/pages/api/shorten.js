@@ -1,4 +1,4 @@
-const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8000";
+const BACKEND_URL = process.env.BACKEND_URL || "https://linkforge-8l4l.onrender.com";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();

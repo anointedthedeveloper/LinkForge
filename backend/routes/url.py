@@ -9,7 +9,7 @@ import os
 
 router = APIRouter()
 
-BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
+BASE_URL = os.getenv("BASE_URL", "https://linkforge-8l4l.onrender.com")
 
 @router.post("/shorten", response_model=URLResponse)
 async def shorten_url(payload: URLCreate, db: Session = Depends(get_db)):

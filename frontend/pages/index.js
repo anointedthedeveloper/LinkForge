@@ -2,7 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-const DOMAIN = "https://linkforge.vercel.app";
+const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN || "https://linkforge.vercel.app";
 
 const schemaWebApp = {
   "@context": "https://schema.org",
